@@ -1,0 +1,161 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(Neutro-2/Neutro-Bold.otf);
+  }
+
+h2 {
+    font-family: myFirstFont;
+    color: #F25749;
+    margin-left: 5%;
+}
+
+p {
+    font-family: myFirstFont;
+    color: #3D403F;
+    margin-left: 5%;
+}
+
+body {
+    background-image: url(mobbag.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+}
+
+#pic {
+    width: 100%;
+}
+
+#knap1 {
+    width: 100%;
+    display: none;
+}
+#knap2 {
+    width: 100%;
+}
+#knap3 {
+    width: 100%;
+    display: none;
+}
+#knap4 {
+    width: 100%;
+    display: none;
+}
+#knapmob {
+    width: 100%;
+    display: block;
+}
+
+#cv {
+    width: 75%;
+    margin-left: 12.5%;
+    display: block;
+    margin-bottom: 100px;
+}
+#cv2 {
+    display: none;
+}
+
+#tilbage1 {
+    position: sticky;
+    width: 40%;
+    top: 80%;
+    left: 5%;
+}
+
+#topmob {
+    width: 100%;
+    display: block;
+}
+#topweb {
+    display: none;
+}
+
+#video {
+    width: 100%;
+    height: 350px;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-image: url(deskbag.png);
+        background-size: 100%;
+    }
+
+    #knap1 {
+        position: absolute;
+        width: 25%;
+        left: 73%;
+        top: 80%;
+        display: block;
+    }
+    #knap2 {
+        position: absolute;
+        width: 25%;
+        left: 6%;
+        top: 210%;
+    }
+    #knap3 {
+        position: absolute;
+        width: 25%;
+        left: 63%;
+        top: 365%;
+        display: block;
+    }
+    #knap4 {
+        position: absolute;
+        width: 25%;
+        left: 63%;
+        top: 475%;
+        display: block;
+    }
+    #knapmob {
+        display: none;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    
+    p {
+        font-size: 25px;
+    }
+    #cv2 {
+        width: 40%;
+        margin-left: 30%;
+        display: block;
+        margin-bottom: 100px;
+    }
+    #cv {
+        display: none;
+    }
+    #tilbage1 {
+        position: sticky;
+        width: 25%;
+        top: 2%;
+        left: 75%;
+    }
+    #topmob {
+        display: none;
+    }
+    #topweb {
+        width: 100%;
+        display: block;
+    }
+    #video {
+        width: 100%;
+        height: 650px;
+    }
+  }
+
