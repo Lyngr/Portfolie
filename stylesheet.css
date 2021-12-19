@@ -30,7 +30,7 @@ body {
 }
 /* Giver min body en baggrund og gør så den ikke repeater og fylder hele skærmen, gør også så den følger os nå man scroller*/
 
-#pic {
+.pic {
     width: 100%;
 }
 /* Giver alt med id="pic" en width så den passer siden lige meget hvordan den bliver scaleret*/
@@ -51,7 +51,7 @@ body {
     display: none;
 }
 /* indsætter knap som man ikke kan se endnu (mere under media query)*/
-#knapmob {
+.knapmob {
     width: 100%;
     display: block;
 }
@@ -128,7 +128,7 @@ body {
         display: block;
     }
 /* Disse knapper kan nu ses og de bliver gevet en position*/
-    #knapmob {
+    .knapmob {
         display: none;
     }
 /* Disse knapper kan nu ikke ses*/
