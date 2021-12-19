@@ -8,18 +8,19 @@ html, body {
     font-family: myFirstFont;
     src: url(Neutro-2/Neutro-Bold.otf);
   }
+/* Laver min egen font family som jeg kan bruge til mine h2 og p*/
 
 h2 {
     font-family: myFirstFont;
     color: #F25749;
     margin-left: 5%;
 }
-
 p {
     font-family: myFirstFont;
     color: #3D403F;
     margin-left: 5%;
 }
+/* h2 og p for font family, farver og position*/
 
 body {
     background-image: url(mobbag.png);
@@ -27,16 +28,12 @@ body {
     background-size: 100%;
     background-attachment: fixed;
 }
-
-nav {
-    position: fixed;
-    width: 100%;
-    line-height: 60px;
-}
+/* Giver min body en baggrund og gør så den ikke repeater og fylder hele skærmen, gør også så den følger os nå man scroller*/
 
 #pic {
     width: 100%;
 }
+/* Giver alt med id="pic" en width så den passer siden lige meget hvordan den bliver scaleret*/
 
 #knap1 {
     width: 100%;
@@ -53,10 +50,12 @@ nav {
     width: 100%;
     display: none;
 }
+/* indsætter knap som man ikke kan se endnu (mere under media query)*/
 #knapmob {
     width: 100%;
     display: block;
 }
+/* Knap man godt kan se*/
 
 #cv {
     width: 75%;
@@ -67,6 +66,7 @@ nav {
 #cv2 {
     display: none;
 }
+/* 2 cv billeder hvor kun den ene kan ses endnu (mere under media query)*/
 
 #tilbage1 {
     position: sticky;
@@ -74,6 +74,7 @@ nav {
     top: 80%;
     left: 5%;
 }
+/* Min tilbage knap som er sticky*/
 
 #topmob {
     width: 100%;
@@ -82,17 +83,22 @@ nav {
 #topweb {
     display: none;
 }
+/* Billede i toppen af min album side som ændres med media query*/
 
 #video {
     width: 100%;
     height: 350px;
 }
+/* Width og height på de 2 video som er på henholdsvis pizza og roskilde undersiderne*/
+
+
 
 @media only screen and (min-width: 600px) {
     body {
         background-image: url(deskbag.png);
         background-size: 100%;
     }
+/* Baggrund ændres til at tilpasse desktop*/
 
     #knap1 {
         position: absolute;
@@ -121,31 +127,40 @@ nav {
         top: 475%;
         display: block;
     }
+/* Disse knapper kan nu ses og de bliver gevet en position*/
     #knapmob {
         display: none;
     }
+/* Disse knapper kan nu ikke ses*/
+
     h2 {
         font-size: 30px;
     }
-    
     p {
         font-size: 25px;
     }
+/* font size*/
+
     #cv2 {
         width: 40%;
         margin-left: 30%;
         display: block;
         margin-bottom: 100px;
     }
+/* Desktop cv knappen kan nu ses og den bliver gevet en position og størrelse*/
     #cv {
         display: none;
     }
+/* Mobil cv knappen kan nu ikke ses*/
+
     #tilbage1 {
         position: sticky;
         width: 25%;
         top: 2%;
         left: 75%;
     }
+/* Tilbage knap til desktop kan nu ses og den bliver gevet position størrelse og sticky*/
+
     #topmob {
         display: none;
     }
@@ -153,9 +168,12 @@ nav {
         width: 100%;
         display: block;
     }
+/* Album siden for et andet billede i toppen af siden*/
+
     #video {
         width: 100%;
         height: 650px;
     }
+/* Video bliver gevet anden størrelse på desktop*/
   }
 
